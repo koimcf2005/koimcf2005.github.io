@@ -21,7 +21,7 @@ function addImageOverlay(game, map) {
     const bottomRightLon = centerLon + latLonWidth.lonChange / 2;
 
     const gameFileName = `${gameName}.png`;
-    const imageUrl = 'http://127.0.0.1:5500/Maps/' + gameFileName;
+    const imageUrl = 'https://koimcf2005.github.io/Maps/' + gameFileName;
     
     let imageBounds = [[topLeftLat, topLeftLon], [bottomRightLat, bottomRightLon]];
     const imageOverlay = L.imageOverlay(imageUrl, imageBounds, {
