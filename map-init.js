@@ -15,12 +15,12 @@ var openStreetMapLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}
 	attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-L.control.zoom({
-    position: 'topright'
+var searchControl = L.esri.Geocoding.geosearch({
+	position: 'topleft',
 }).addTo(map);
 
-var searchControl = L.esri.Geocoding.geosearch({
-	position: 'topright'
+L.control.zoom({
+    position: 'topleft'
 }).addTo(map);
 
 var results = L.layerGroup().addTo(map);

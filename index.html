@@ -13,13 +13,22 @@
 	<script src="https://unpkg.com/esri-leaflet-geocoder@2.2.9/dist/esri-leaflet-geocoder.js" integrity="sha512-QXchymy6PyEfYFQeOUuoz5pH5q9ng0eewZN8Sv0wvxq3ZhujTGF4eS/ySpnl6YfTQRWmA2Nn3Bezi9xuF8yNiw==" crossorigin=""></script>
 </head>
 <body>
-    <div id="map"></div>
-
-    <div id="search-container">
-        <!-- Game Search Input -->
-        <input type="text" id="search-input" placeholder="Search for a game..." />
-        <ul id="game-list"></ul>
+    <div id="top-bar">
+        <div id="search-container">
+            <!-- Game Search Input -->
+            <ul id="game-list"></ul>
+            <input type="text" id="search-input" placeholder="Search for a game..." />
+        </div>
+        <div id="nav-buttons">
+            <button>Controls</button>
+            <button>About</button>
+			<button>Contact</button>
+            <button>Support</button>
+            <button>Patreons</button>
+			<button>Q & A</button>
+        </div>
     </div>
+    <div id="map"></div>
 
     <script src="map-init.js"></script>
 	<script type="module" src="search-bar.js"></script>
