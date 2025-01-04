@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Tags for Document Setup -->
+	<meta charset="UTF-8"> <!-- Charset for proper encoding -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for responsive design on mobile devices -->
+
+	<!-- Title of the Webpage -->
 	<title>Map with Layer Toggle</title>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7092642045170386" crossorigin="anonymous"></script>
+
+	<!-- External Resources for Map and Ads -->
+	<!-- Leaflet CSS for styling the map -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-	<link rel="stylesheet" href="index_style.css" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-	<script src="https://unpkg.com/esri-leaflet@2.1.4/dist/esri-leaflet.js" integrity="sha512-m+BZ3OSlzGdYLqUBZt3u6eA0sH+Txdmq7cqA1u8/B2aTXviGMMLOfrKyiIW7181jbzZAY0u+3jWoiL61iLcTKQ==" crossorigin=""></script>
+	<!-- Esri Leaflet Geocoder CSS for styling the geocoding control (search bar) -->
 	<link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.9/dist/esri-leaflet-geocoder.css" integrity="sha512-v5YmWLm8KqAAmg5808pETiccEohtt8rPVMGQ1jA6jqkWVydV5Cuz3nJ9fQ7ittSxvuqsvI9RSGfVoKPaAJZ/AQ==" crossorigin="">
+
+	<!-- Custom Stylesheet for Additional Page Styling -->
+	<link rel="stylesheet" href="index_style.css" />
+
+	<!-- JavaScript Libraries -->
+	<!-- Leaflet JS library for creating maps -->
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<!-- Esri Leaflet JS library for integrating Esri services with Leaflet maps -->
+	<script src="https://unpkg.com/esri-leaflet@2.1.4/dist/esri-leaflet.js" integrity="sha512-m+BZ3OSlzGdYLqUBZt3u6eA0sH+Txdmq7cqA1u8/B2aTXviGMMLOfrKyiIW7181jbzZAY0u+3jWoiL61iLcTKQ==" crossorigin=""></script>
+	<!-- Esri Leaflet Geocoder JS for adding geocoding (search functionality) to the map -->
 	<script src="https://unpkg.com/esri-leaflet-geocoder@2.2.9/dist/esri-leaflet-geocoder.js" integrity="sha512-QXchymy6PyEfYFQeOUuoz5pH5q9ng0eewZN8Sv0wvxq3ZhujTGF4eS/ySpnl6YfTQRWmA2Nn3Bezi9xuF8yNiw==" crossorigin=""></script>
+
+	<!-- Google Ads Script -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7092642045170386" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="top-bar">
-        <div id="search-container">
-            <!-- Game Search Input -->
-            <ul id="game-list"></ul>
-            <input type="text" id="search-input" placeholder="Search for a game..." />
-        </div>
-        <div id="nav-buttons">
-            <button>Controls</button>
-            <button>About</button>
+	<div id="top-bar">
+		<div id="search-container">
+			<!-- Game Search Input -->
+			<ul id="game-list"></ul>
+			<input type="text" id="search-input" placeholder="Search for a game..." />
+		</div>
+		<div id="nav-buttons">
+			<button>Controls</button>
+			<button>About</button>
 			<button>Contact</button>
-            <button>Support</button>
-            <button>Patreons</button>
+			<button>Support</button>
+			<button>Patreons</button>
 			<button>Q & A</button>
-        </div>
-    </div>
-    <div id="map"></div>
+		</div>
+	</div>
+	<div id="map"></div>
 
-    <script src="map-init.js"></script>
+	<script src="map-init.js"></script>
 	<script type="module" src="search-bar.js"></script>
 </body>
 </html>
